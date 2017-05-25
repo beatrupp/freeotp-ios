@@ -46,13 +46,13 @@ class CircleProgressView : UIView {
         }
     }
 
-    override func willMoveToSuperview(newSuperview: UIView?) {
-        backgroundColor = UIColor.clearColor()
+    override func willMove(toSuperview newSuperview: UIView?) {
+        backgroundColor = UIColor.clear
     }
 
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         let prog = self.clockwise ? self.progress : (1.0 - self.progress)
-        let center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds))
+        let center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
         let radius = max(min(self.bounds.size.height / 2.0, self.bounds.size.width / 2.0) - 4, 1)
         let radians = max(min(Double(prog) * 2 * M_PI, 2 * M_PI), 0)
 
@@ -71,7 +71,7 @@ class CircleProgressView : UIView {
             path.stroke()
         } else {
             color.setFill()
-            path.addLineToPoint(center)
+            path.addLine(to: center)
             path.addClip()
             UIRectFill(self.bounds);
         }

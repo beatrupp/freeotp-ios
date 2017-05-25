@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0815CC1E1E4A6EC3003326FB /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0815CC1D1E4A6EC2003326FB /* Base32.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0815CC201E4A6ECA003326FB /* moa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0815CC1F1E4A6ECA003326FB /* moa.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F10D88C41B56A3C400482D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D88C31B56A3C400482D15 /* AppDelegate.swift */; };
 		F10D88C91B56A3C400482D15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10D88C71B56A3C400482D15 /* Main.storyboard */; };
 		F10D88CB1B56A3C400482D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10D88CA1B56A3C400482D15 /* Assets.xcassets */; };
@@ -31,15 +33,11 @@
 		F18FA53E1B571E5D00B1CEAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18FA53D1B571E5D00B1CEAD /* Foundation.framework */; };
 		F18FA5401B57339F00B1CEAD /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18FA53F1B57339F00B1CEAD /* Storage.swift */; };
 		F18FA5441B58D30800B1CEAD /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18FA5431B58D30800B1CEAD /* KeychainStore.swift */; };
-		F19DA5701B5EE73E00A54DDC /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = F19DA56F1B5EE73E00A54DDC /* lock.png */; };
 		F19DA56E1B5C832600A54DDC /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19DA56D1B5C832600A54DDC /* Launch.storyboard */; };
+		F19DA5701B5EE73E00A54DDC /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = F19DA56F1B5EE73E00A54DDC /* lock.png */; };
 		F1CA93C91B56AA0000828B8B /* HOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA93C61B56AA0000828B8B /* HOTP.swift */; };
 		F1CA93CA1B56AA0000828B8B /* TOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA93C71B56AA0000828B8B /* TOTP.swift */; };
 		F1CA93CB1B56AA0000828B8B /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CA93C81B56AA0000828B8B /* URI.swift */; };
-		F1CA93CE1B56AA8400828B8B /* moa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CA93CC1B56AA8400828B8B /* moa.framework */; };
-		F1CA93CF1B56AA8400828B8B /* moa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1CA93CC1B56AA8400828B8B /* moa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F1CA93D01B56AA8400828B8B /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CA93CD1B56AA8400828B8B /* Base32.framework */; };
-		F1CA93D11B56AA8400828B8B /* Base32.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1CA93CD1B56AA8400828B8B /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F1CA93D71B56AB9500828B8B /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = F1CA93D31B56AB9500828B8B /* iTunesArtwork@2x */; };
 		F1CA93D81B56AB9500828B8B /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = F1CA93D41B56AB9500828B8B /* default.png */; };
 		F1CA93D91B56AB9500828B8B /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = F1CA93D51B56AB9500828B8B /* qrcode.png */; };
@@ -56,22 +54,9 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		F1CA93D21B56AA8400828B8B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F1CA93D11B56AA8400828B8B /* Base32.framework in Embed Frameworks */,
-				F1CA93CF1B56AA8400828B8B /* moa.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		0815CC1D1E4A6EC2003326FB /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base32.framework; path = Carthage/Build/iOS/Base32.framework; sourceTree = "<group>"; };
+		0815CC1F1E4A6ECA003326FB /* moa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = moa.framework; path = Carthage/Build/iOS/moa.framework; sourceTree = "<group>"; };
 		F10D88C01B56A3C400482D15 /* FreeOTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeOTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10D88C31B56A3C400482D15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F10D88C81B56A3C400482D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,14 +86,12 @@
 		F18FA53D1B571E5D00B1CEAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F18FA53F1B57339F00B1CEAD /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		F18FA5431B58D30800B1CEAD /* KeychainStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
-		F19DA56F1B5EE73E00A54DDC /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		F19DA56D1B5C832600A54DDC /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		F19DA56F1B5EE73E00A54DDC /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		F1CA93C51B56AA0000828B8B /* FreeOTPTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreeOTPTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F1CA93C61B56AA0000828B8B /* HOTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOTP.swift; sourceTree = "<group>"; };
 		F1CA93C71B56AA0000828B8B /* TOTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOTP.swift; sourceTree = "<group>"; };
 		F1CA93C81B56AA0000828B8B /* URI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URI.swift; sourceTree = "<group>"; };
-		F1CA93CC1B56AA8400828B8B /* moa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = moa.framework; path = Carthage/Build/iOS/moa.framework; sourceTree = "<group>"; };
-		F1CA93CD1B56AA8400828B8B /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base32.framework; path = Carthage/Build/iOS/Base32.framework; sourceTree = "<group>"; };
 		F1CA93D31B56AB9500828B8B /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		F1CA93D41B56AB9500828B8B /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
 		F1CA93D51B56AB9500828B8B /* qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrcode.png; sourceTree = "<group>"; };
@@ -121,8 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1CA93CE1B56AA8400828B8B /* moa.framework in Frameworks */,
-				F1CA93D01B56AA8400828B8B /* Base32.framework in Frameworks */,
+				0815CC1E1E4A6EC3003326FB /* Base32.framework in Frameworks */,
+				0815CC201E4A6ECA003326FB /* moa.framework in Frameworks */,
 				F18FA5361B571E2200B1CEAD /* CoreBluetooth.framework in Frameworks */,
 				F18FA53A1B571E4800B1CEAD /* CoreGraphics.framework in Frameworks */,
 				F18FA53E1B571E5D00B1CEAD /* Foundation.framework in Frameworks */,
@@ -144,13 +127,13 @@
 		F10D88B71B56A3C400482D15 = {
 			isa = PBXGroup;
 			children = (
+				0815CC1F1E4A6ECA003326FB /* moa.framework */,
+				0815CC1D1E4A6EC2003326FB /* Base32.framework */,
 				F18FA53D1B571E5D00B1CEAD /* Foundation.framework */,
 				F18FA53B1B571E5500B1CEAD /* UIKit.framework */,
 				F18FA5391B571E4800B1CEAD /* CoreGraphics.framework */,
 				F18FA5371B571E3B00B1CEAD /* Photos.framework */,
 				F18FA5351B571E2200B1CEAD /* CoreBluetooth.framework */,
-				F1CA93CC1B56AA8400828B8B /* moa.framework */,
-				F1CA93CD1B56AA8400828B8B /* Base32.framework */,
 				F10D88C21B56A3C400482D15 /* FreeOTP */,
 				F10D88D71B56A3C400482D15 /* FreeOTPTests */,
 				F10D88E21B56A3C500482D15 /* FreeOTPUITests */,
@@ -255,7 +238,7 @@
 				F10D88BC1B56A3C400482D15 /* Sources */,
 				F10D88BD1B56A3C400482D15 /* Frameworks */,
 				F10D88BE1B56A3C400482D15 /* Resources */,
-				F1CA93D21B56AA8400828B8B /* Embed Frameworks */,
+				0815CC211E4A70D6003326FB /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -291,14 +274,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Fedora Project";
 				TargetAttributes = {
 					F10D88BF1B56A3C400482D15 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = M9L3SZ4ZVY;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
 					};
 					F10D88D31B56A3C400482D15 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0820;
 						TestTargetID = F10D88BF1B56A3C400482D15;
 					};
 				};
@@ -346,6 +333,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0815CC211E4A70D6003326FB /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Base32.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/moa.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F10D88BC1B56A3C400482D15 /* Sources */ = {
@@ -417,10 +424,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -447,6 +457,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "FreeOTP/FreeOTP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -464,10 +475,13 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -486,6 +500,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "FreeOTP/FreeOTP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -495,10 +511,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M9L3SZ4ZVY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_SHADOW = YES;
 				INFOPLIST_FILE = FreeOTP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.fedorahosted.freeotp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -506,10 +533,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M9L3SZ4ZVY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_SHADOW = YES;
 				INFOPLIST_FILE = FreeOTP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.fedorahosted.freeotp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -524,6 +562,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FreeOTPTests/FreeOTPTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeOTP.app/FreeOTP";
 			};
 			name = Debug;
@@ -538,6 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.fedorahosted.FreeOTPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FreeOTPTests/FreeOTPTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeOTP.app/FreeOTP";
 			};
 			name = Release;
